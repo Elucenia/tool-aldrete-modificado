@@ -1,0 +1,244 @@
+{
+  "tool": {
+    "id": "aldrete-modificado",
+    "title": "Índice de Aldrete modificado",
+    "short": "Alta da recuperação pós-anestésica",
+    "desc": "Calcule o índice de Aldrete modificado (com SpO₂) para decidir a alta da sala de recuperação pós-anestésica: atividade, respiração, circulação, consciência.",
+    "lead": "Avalia a recuperação após a anestesia em cinco itens (atividade, respiração, circulação, consciência e saturação de O₂) e indica quando o paciente pode deixar a sala de recuperação.",
+    "spec": [
+      "anestesiologia",
+      "medicina-intensiva"
+    ],
+    "fields": [
+      [
+        "atividade",
+        "Atividade motora",
+        "radio",
+        {
+          "opts": {
+            "0": "Não move",
+            "1": "Move 2 membros",
+            "2": "Move os 4 membros"
+          }
+        }
+      ],
+      [
+        "resp",
+        "Respiração",
+        "radio",
+        {
+          "opts": {
+            "0": "Apneia",
+            "1": "Dispneia ou respiração limitada",
+            "2": "Respira fundo e tosse"
+          }
+        }
+      ],
+      [
+        "circ",
+        "Circulação (PA em relação à pré-anestésica)",
+        "radio",
+        {
+          "opts": {
+            "0": "Variação ≥ 50%",
+            "1": "Variação de 20 a 49%",
+            "2": "Variação ≤ 20%"
+          }
+        }
+      ],
+      [
+        "consc",
+        "Consciência",
+        "radio",
+        {
+          "opts": {
+            "0": "Não responde",
+            "1": "Desperta ao ser chamado",
+            "2": "Totalmente desperto"
+          }
+        }
+      ],
+      [
+        "spo2",
+        "Saturação de O₂",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 90% mesmo com O₂",
+            "1": "Precisa de O₂ para manter &gt; 90%",
+            "2": "&gt; 92% em ar ambiente"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Aldrete modificado",
+      "unit": "de 10",
+      "bands": [
+        [
+          0,
+          "high",
+          "Abaixo de 9: manter na sala de recuperação",
+          "Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual)."
+        ],
+        [
+          9,
+          "low",
+          "Critério de alta da sala de recuperação atingido (≥ 9)",
+          "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo."
+        ]
+      ]
+    },
+    "formula": "<p>Cinco itens de 0 a 2 pontos (total 0 a 10): atividade, respiração, circulação, consciência e saturação de O₂. A versão de 1995 trocou a cor da pele pela oximetria de pulso.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Conduta"
+      ],
+      [
+        "9 a 10",
+        "Pode receber alta da sala de recuperação"
+      ],
+      [
+        "0 a 8",
+        "Permanecer em observação e reavaliar"
+      ]
+    ],
+    "tips": [
+      "O índice avalia a recuperação fisiológica, não a dor nem a náusea: registre ambas antes da alta.",
+      "Em cirurgia ambulatorial, a alta para casa segue critérios próprios (ex.: PADSS), que incluem deambulação, dor, náusea e sangramento.",
+      "Após bloqueio neuroaxial, a atividade motora dos membros inferiores pode estar reduzida sem que isso impeça a alta para a enfermaria: documente a regressão do bloqueio.",
+      "Um escore alto não dispensa a observação mínima após opioide neuroaxial ou em pacientes com apneia do sono."
+    ],
+    "sources": [
+      [
+        "Aldrete JA. The post-anesthesia recovery score revisited. J Clin Anesth, 1995.",
+        "https://doi.org/10.1016/0952-8180(94)00001-K"
+      ],
+      [
+        "Aldrete JA, Kroulik D. A postanesthetic recovery score. Anesth Analg, 1970.",
+        "https://doi.org/10.1213/00000539-197011000-00020"
+      ]
+    ],
+    "cases": [
+      [
+        "Recuperação completa: 10",
+        {
+          "atividade": "2",
+          "resp": "2",
+          "circ": "2",
+          "consc": "2",
+          "spo2": "2"
+        },
+        {
+          "score": 10,
+          "level": "low"
+        }
+      ],
+      [
+        "Precisa de O₂: 9 (limite de alta)",
+        {
+          "atividade": "2",
+          "resp": "2",
+          "circ": "2",
+          "consc": "2",
+          "spo2": "1"
+        },
+        {
+          "score": 9,
+          "level": "low"
+        }
+      ],
+      [
+        "Sonolento, respiração limitada, em O₂: 7",
+        {
+          "atividade": "2",
+          "resp": "1",
+          "circ": "2",
+          "consc": "1",
+          "spo2": "1"
+        },
+        {
+          "score": 7,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 10",
+      "label": "Aldrete modificado",
+      "fields": [
+        [
+          "atividade",
+          "radio",
+          0
+        ],
+        [
+          "resp",
+          "radio",
+          0
+        ],
+        [
+          "circ",
+          "radio",
+          0
+        ],
+        [
+          "consc",
+          "radio",
+          0
+        ],
+        [
+          "spo2",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "high",
+          "Abaixo de 9: manter na sala de recuperação",
+          "Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual)."
+        ],
+        [
+          9,
+          "low",
+          "Critério de alta da sala de recuperação atingido (≥ 9)",
+          "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo."
+        ]
+      ]
+    },
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

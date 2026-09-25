@@ -1,0 +1,68 @@
+[
+  {
+    "label": "Recuperação completa: 10",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "score": 10,
+      "level": "low"
+    },
+    "originalInput": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Precisa de O₂: 9 (limite de alta)",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "1"
+    },
+    "expected": {
+      "score": 9,
+      "level": "low"
+    },
+    "originalInput": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sonolento, respiração limitada, em O₂: 7",
+    "input": {
+      "atividade": "2",
+      "resp": "1",
+      "circ": "2",
+      "consc": "1",
+      "spo2": "1"
+    },
+    "expected": {
+      "score": 7,
+      "level": "high"
+    },
+    "originalInput": {
+      "atividade": "2",
+      "resp": "1",
+      "circ": "2",
+      "consc": "1",
+      "spo2": "1"
+    },
+    "expandedZeroOptions": []
+  }
+]
