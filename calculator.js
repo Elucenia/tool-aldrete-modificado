@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-aldrete-modificado · Elucenia · https://github.com/Elucenia/tool-aldrete-modificado
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"aldrete-modificado","title":"Índice de Aldrete modificado","fields":[["atividade","Atividade motora","radio",{"opts":{"0":"Não move","1":"Move 2 membros","2":"Move os 4 membros"}}],["resp","Respiração","radio",{"opts":{"0":"Apneia","1":"Dispneia ou respiração limitada","2":"Respira fundo e tosse"}}],["circ","Circulação (PA em relação à pré-anestésica)","radio",{"opts":{"0":"Variação ≥ 50%","1":"Variação de 20 a 49%","2":"Variação ≤ 20%"}}],["consc","Consciência","radio",{"opts":{"0":"Não responde","1":"Desperta ao ser chamado","2":"Totalmente desperto"}}],["spo2","Saturação de O₂","radio",{"opts":{"0":"&lt; 90% mesmo com O₂","1":"Precisa de O₂ para manter &gt; 90%","2":"&gt; 92% em ar ambiente"}}]],"config":{"unit":"de 10","label":"Aldrete modificado","fields":[["atividade","radio",0],["resp","radio",0],["circ","radio",0],["consc","radio",0],["spo2","radio",0]],"bands":[[0,"high","Abaixo de 9: manter na sala de recuperação","Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual)."],[9,"low","Critério de alta da sala de recuperação atingido (≥ 9)","Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
