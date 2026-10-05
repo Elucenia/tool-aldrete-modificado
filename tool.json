@@ -5,6 +5,7 @@
     "short": "Alta da recuperação pós-anestésica",
     "desc": "Calcule o índice de Aldrete modificado (com SpO₂) para decidir a alta da sala de recuperação pós-anestésica: atividade, respiração, circulação, consciência.",
     "lead": "Avalia a recuperação após a anestesia em cinco itens (atividade, respiração, circulação, consciência e saturação de O₂) e indica quando o paciente pode deixar a sala de recuperação.",
+    "kind": "Escore",
     "spec": [
       "anestesiologia",
       "medicina-intensiva"
@@ -71,45 +72,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Aldrete modificado",
-      "unit": "de 10",
-      "bands": [
-        [
-          0,
-          "high",
-          "Abaixo de 9: manter na sala de recuperação",
-          "Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual)."
-        ],
-        [
-          9,
-          "low",
-          "Critério de alta da sala de recuperação atingido (≥ 9)",
-          "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo."
-        ]
-      ]
-    },
     "formula": "<p>Cinco itens de 0 a 2 pontos (total 0 a 10): atividade, respiração, circulação, consciência e saturação de O₂. A versão de 1995 trocou a cor da pele pela oximetria de pulso.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Conduta"
-      ],
-      [
-        "9 a 10",
-        "Pode receber alta da sala de recuperação"
-      ],
-      [
-        "0 a 8",
-        "Permanecer em observação e reavaliar"
-      ]
-    ],
-    "tips": [
-      "O índice avalia a recuperação fisiológica, não a dor nem a náusea: registre ambas antes da alta.",
-      "Em cirurgia ambulatorial, a alta para casa segue critérios próprios (ex.: PADSS), que incluem deambulação, dor, náusea e sangramento.",
-      "Após bloqueio neuroaxial, a atividade motora dos membros inferiores pode estar reduzida sem que isso impeça a alta para a enfermaria: documente a regressão do bloqueio.",
-      "Um escore alto não dispensa a observação mínima após opioide neuroaxial ou em pacientes com apneia do sono."
-    ],
     "sources": [
       [
         "Aldrete JA. The post-anesthesia recovery score revisited. J Clin Anesth, 1995.",
@@ -118,6 +81,14 @@
       [
         "Aldrete JA, Kroulik D. A postanesthetic recovery score. Anesth Analg, 1970.",
         "https://doi.org/10.1213/00000539-197011000-00020"
+      ],
+      [
+        "JAntonioAldrete2007,RAA65(3),pp194–195",
+        "https://www.anestesia.org.ar/search/articulos_completos/1/1/1121/c.pdf"
+      ],
+      [
+        "Aldrete1995,originalletter,reproducedmirror",
+        "https://anest-rean.ru/wp-content/uploads/2024/11/Aldrete-J.A.-The-post-anesthesia-recovery-score-revisited.1995.pdf"
       ]
     ],
     "cases": [
@@ -164,53 +135,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 10",
-      "label": "Aldrete modificado",
-      "fields": [
-        [
-          "atividade",
-          "radio",
-          0
-        ],
-        [
-          "resp",
-          "radio",
-          0
-        ],
-        [
-          "circ",
-          "radio",
-          0
-        ],
-        [
-          "consc",
-          "radio",
-          0
-        ],
-        [
-          "spo2",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "high",
-          "Abaixo de 9: manter na sala de recuperação",
-          "Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual)."
-        ],
-        [
-          9,
-          "low",
-          "Critério de alta da sala de recuperação atingido (≥ 9)",
-          "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -219,17 +143,497 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:08:23.552Z",
+      "total": 243,
+      "passed": 243,
+      "sourceRowCount": 243,
+      "uniqueApiInputCount": 243,
+      "sourceContextCount": 243,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "b812a5d4fff86110fbd8fd6a4ed0108989799e1a3a195d775d13c649c2ca8ed2",
+        "total": 243,
+        "bankRowCount": 243,
+        "uniqueApiInputCount": 243,
+        "sourceContextCount": 243,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+            "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+          "sha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b"
+        },
+        "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 243,
+        "uniqueApiInputs": 243,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+          "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+        }
+      },
+      "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+      "sources": [
+        {
+          "id": "aldrete-modificado",
+          "declaredEdition": "Modified Aldrete 1995:5 itens 0–2, Sp O 2 substituicor, total 0–10",
+          "readRecords": [
+            {
+              "id": "aldrete-modificado",
+              "edition": "Aldrete1995 J Clin Anesth7:89–91, Tables1/2 and explanatory text pp89–90",
+              "url": "https://doi.org/10.1016/0952-8180(94)00001-K",
+              "retrievalURL": "https://anest-rean.ru/wp-content/uploads/2024/11/Aldrete-J.A.-The-post-anesthesia-recovery-score-revisited.1995.pdf",
+              "file": "aldrete-1995-original-final27.pdf",
+              "readPages": [
+                1,
+                2
+              ],
+              "observations": "Explanatory text assigns oxygenation0/1/2, as do the first five components of Table2. Table1 nevertheless prints1 for its lowest oxygenation row. This discrepancy is explicitly retained. The new bank sums five already assigned component values0–2 (maximum10), using the explanatory0/1/2 model; it does not claim full conformity of original Table1 or its extended ambulatory10-component Table2.",
+              "unchecked": [
+                "Original third page not included in this new visual reading.",
+                "Original circulation ±20% appears in adjacent categories; the local ≤20 and20–49% labels overlap exactly20%. No adjudication of that clinical boundary is provided by a point-sum bank.",
+                "Discharge thresholds, oxygen supplementation, ambulatory status and clinical observation are not approved."
+              ],
+              "sha256": "a7a5d3b0b2bcc582c2acb8b72f44bdabc0cd83206934a5ca51f8d5d0b41454b0",
+              "visualEvidence": [
+                {
+                  "file": "aldrete-1995-original-final27-p1.png",
+                  "sha256": "3d6aa54110a2d54b275002b1b0ca4ff2a565c000f74867217cb7efb0c112a636"
+                },
+                {
+                  "file": "aldrete-1995-original-final27-p2.png",
+                  "sha256": "a707cea543de3d758d76368d8e85d0085cac53602e88480140b0e156cec5178f"
+                }
+              ],
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "sourceRightsApproval": "not-performed"
+            }
+          ],
+          "sourceReview": {
+            "file": "reports/review-20261003/three-further-score-primary-review-final27.json",
+            "sha256": "49449018ee564d2d981ad126b2fb703ee1c78124d83e122bc12ec256c7f5d0f0"
+          },
+          "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+      "evidenceSha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b",
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+        "peer": {
+          "file": "reports/review-20261003/three-further-score-source-independent-review-western-final27-r2.json",
+          "sha256": "8f28bb21326d78494fc35cd16dfe612d77337f815fccb318eab269a44a9c4999"
+        },
+        "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+          "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 729,
+      "actualVmExecutions": 729,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/aldrete-modificado/calculator.js",
+          "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/aldrete-modificado/calculator.js",
+          "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/aldrete-modificado/calculator.js",
+          "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+        }
+      ],
+      "qualifications": [
+        "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+        "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/aldrete-modificado/calculator.js",
+          "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/aldrete-modificado/calculator.js",
+          "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/aldrete-modificado/calculator.js",
+          "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Modified Aldrete 1995:5 itens 0–2, Sp O 2 substituicor, total 0–10",
+    "implementationVersion": "aldrete-modificado@native-2026-10-03+88b604ae71f0",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/7772368/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Cinco itens de 0 a 2 pontos (total 0 a 10): atividade, respiração, circulação, consciência e saturação de O₂. A versão de 1995 trocou a cor da pele pela oximetria de pulso.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "atividade",
+            "label": "Atividade motora",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não move",
+              "1": "Move 2 membros",
+              "2": "Move os 4 membros"
+            }
+          },
+          {
+            "key": "resp",
+            "label": "Respiração",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Apneia",
+              "1": "Dispneia ou respiração limitada",
+              "2": "Respira fundo e tosse"
+            }
+          },
+          {
+            "key": "circ",
+            "label": "Circulação (PA em relação à pré-anestésica)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Variação ≥ 50%",
+              "1": "Variação de 20 a 49%",
+              "2": "Variação ≤ 20%"
+            }
+          },
+          {
+            "key": "consc",
+            "label": "Consciência",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não responde",
+              "1": "Desperta ao ser chamado",
+              "2": "Totalmente desperto"
+            }
+          },
+          {
+            "key": "spo2",
+            "label": "Saturação de O₂",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 90% mesmo com O₂",
+              "1": "Precisa de O₂ para manter &gt; 90%",
+              "2": "&gt; 92% em ar ambiente"
+            }
+          }
+        ],
+        "hash": "665d3744767a2b6942d08c876b575ffdab995f71ed91f3f20931fbc232621b38"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Aldrete JA. The post-anesthesia recovery score revisited. J Clin Anesth, 1995.",
+          "url": "https://doi.org/10.1016/0952-8180(94)00001-K",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The post-anesthesia recovery score revisited.",
+            "year": "1995",
+            "firstPublicationDate": "1995-02-01",
+            "doi": "10.1016/0952-8180(94)00001-k",
+            "pmid": "7772368",
+            "journal": "Journal of clinical anesthesia",
+            "authors": "Aldrete JA."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/7772368/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Aldrete JA, Kroulik D. A postanesthetic recovery score. Anesth Analg, 1970.",
+          "url": "https://doi.org/10.1213/00000539-197011000-00020",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A postanesthetic recovery score.",
+            "year": "1970",
+            "firstPublicationDate": "1970-11-01",
+            "doi": "10.1213/00000539-197011000-00020",
+            "pmid": "5534693",
+            "journal": "Anesthesia and analgesia",
+            "authors": "Aldrete JA, Kroulik D."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/5534693/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:08:23.552Z",
+        "total": 243,
+        "passed": 243,
+        "sourceRowCount": 243,
+        "uniqueApiInputCount": 243,
+        "sourceContextCount": 243,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "b812a5d4fff86110fbd8fd6a4ed0108989799e1a3a195d775d13c649c2ca8ed2",
+          "total": 243,
+          "bankRowCount": 243,
+          "uniqueApiInputCount": 243,
+          "sourceContextCount": 243,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+              "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+            "sha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b"
+          },
+          "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 243,
+          "uniqueApiInputs": 243,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/three-further-score-independent-expectations-final27.json",
+            "sha256": "791c518211ed474467ea57bd1765e111b0f623894f1654cb2dc53620ad7cbb07"
+          }
+        },
+        "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "sources": [
+          {
+            "id": "aldrete-modificado",
+            "declaredEdition": "Modified Aldrete 1995:5 itens 0–2, Sp O 2 substituicor, total 0–10",
+            "readRecords": [
+              {
+                "id": "aldrete-modificado",
+                "edition": "Aldrete1995 J Clin Anesth7:89–91, Tables1/2 and explanatory text pp89–90",
+                "url": "https://doi.org/10.1016/0952-8180(94)00001-K",
+                "retrievalURL": "https://anest-rean.ru/wp-content/uploads/2024/11/Aldrete-J.A.-The-post-anesthesia-recovery-score-revisited.1995.pdf",
+                "file": "aldrete-1995-original-final27.pdf",
+                "readPages": [
+                  1,
+                  2
+                ],
+                "observations": "Explanatory text assigns oxygenation0/1/2, as do the first five components of Table2. Table1 nevertheless prints1 for its lowest oxygenation row. This discrepancy is explicitly retained. The new bank sums five already assigned component values0–2 (maximum10), using the explanatory0/1/2 model; it does not claim full conformity of original Table1 or its extended ambulatory10-component Table2.",
+                "unchecked": [
+                  "Original third page not included in this new visual reading.",
+                  "Original circulation ±20% appears in adjacent categories; the local ≤20 and20–49% labels overlap exactly20%. No adjudication of that clinical boundary is provided by a point-sum bank.",
+                  "Discharge thresholds, oxygen supplementation, ambulatory status and clinical observation are not approved."
+                ],
+                "sha256": "a7a5d3b0b2bcc582c2acb8b72f44bdabc0cd83206934a5ca51f8d5d0b41454b0",
+                "visualEvidence": [
+                  {
+                    "file": "aldrete-1995-original-final27-p1.png",
+                    "sha256": "3d6aa54110a2d54b275002b1b0ca4ff2a565c000f74867217cb7efb0c112a636"
+                  },
+                  {
+                    "file": "aldrete-1995-original-final27-p2.png",
+                    "sha256": "a707cea543de3d758d76368d8e85d0085cac53602e88480140b0e156cec5178f"
+                  }
+                ],
+                "clinicalApproval": "not-performed",
+                "professionalLanguageApproval": "not-performed",
+                "sourceRightsApproval": "not-performed"
+              }
+            ],
+            "sourceReview": {
+              "file": "reports/review-20261003/three-further-score-primary-review-final27.json",
+              "sha256": "49449018ee564d2d981ad126b2fb703ee1c78124d83e122bc12ec256c7f5d0f0"
+            },
+            "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/three-further-score-source-comparison-final27.json",
+        "evidenceSha256": "47060a3f80865748c4e6ffb9758384bbc870069734ed6feee99ac652610f922b",
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+          "peer": {
+            "file": "reports/review-20261003/three-further-score-source-independent-review-western-final27-r2.json",
+            "sha256": "8f28bb21326d78494fc35cd16dfe612d77337f815fccb318eab269a44a9c4999"
+          },
+          "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+            "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 729,
+        "actualVmExecutions": 729,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/aldrete-modificado/calculator.js",
+            "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/aldrete-modificado/calculator.js",
+            "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/aldrete-modificado/calculator.js",
+            "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+          }
+        ],
+        "qualifications": [
+          "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+          "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+          "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/aldrete-modificado/calculator.js",
+            "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/aldrete-modificado/calculator.js",
+            "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/aldrete-modificado/calculator.js",
+            "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+    },
+    "limits": "Esta interface soma os cinco componentes do Aldrete modificado de recuperação pós-anestésica, com total de 0 a 10; não implementa o instrumento ambulatorial ampliado de dez fatores. O total isolado não autoriza alta e deve ser acompanhado de avaliação e reavaliação clínica. As tabelas originais de 1995 e a adaptação do autor de 2007 diferem na redação dos limites circulatórios; exatamente 20% permanece ambíguo. As tabelas de 1995 também divergem na última pontuação de oxigenação. Essas diferenças precisam de adjudicação clínica e não permitem afirmar equivalência integral apenas pela soma.",
+    "limitsEvidence": {
+      "status": "primary-author-adaptation-table-read-original-boundaries-incomplete",
+      "sources": [
+        {
+          "url": "https://www.anestesia.org.ar/search/articulos_completos/1/1/1121/c.pdf",
+          "edition": "JAntonioAldrete2007,RAA65(3),pp194–195",
+          "readScope": "Author article primary PDF: first two pages including TableI visually read. ModifiedI five factors versus ambulatoryII; table boundary wording recorded. Not all9pages.",
+          "capture": [
+            "primary-verify-limits-final23/aldrete-author-p1.png",
+            "primary-verify-limits-final23/aldrete-author-p2.png"
+          ],
+          "pdfSha256": "897645db26938f172f57b60ba453af5eac0fa2fadb475eab44400135a2fdc9ec"
+        },
+        {
+          "url": "https://anest-rean.ru/wp-content/uploads/2024/11/Aldrete-J.A.-The-post-anesthesia-recovery-score-revisited.1995.pdf",
+          "edition": "Aldrete1995,originalletter,reproducedmirror",
+          "readScope": "Direct original scan: printedpp89–90 Table1/Table2 and accompanying oxygenation/ambulatory paragraphs visually read. Third page not visually read. Circulation uses ±20%,±20% to49%,±50% without strict inequalities; Table1/Table2 differ in last oxygenation score.",
+          "capture": [
+            "primary-verify-limits-final23/aldrete-original1995-p1.png",
+            "primary-verify-limits-final23/aldrete-original1995-p2.png"
+          ],
+          "pdfSha256": "a7a5d3b0b2bcc582c2acb8b72f44bdabc0cd83206934a5ca51f8d5d0b41454b0"
+        }
+      ],
+      "populationScope": "Five-factor post-anesthesia recovery assessment; not full ambulatory home-discharge instrument.",
+      "remainingChecks": [
+        "Original1995 third page not visually read; no full-paper review claim.",
+        "Exact20% circulatory boundary unresolved: original1995±20 and±20–49; author2007<20/21–49/>50; local≤20/20–49/≥50. No formula/boundary edit or false closure.",
+        "Original1995Table1 lowest oxygenation score1 versus Table2 score0; editorial discrepancy not independently clinically adjudicated.",
+        "No clinical discharge approval."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/aldrete-modificado/calculator.js",
+    "bytes": 5226,
+    "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "1c543294f0d01610ab2785efcfef72e2622cf04e1ac033e0edcfe4bb9c1acb99",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "38ed3ad9bbf94e93728265e302849ff3b3a95d3bef03d6442798aa14fb00afb9",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "38ed3ad9bbf94e93728265e302849ff3b3a95d3bef03d6442798aa14fb00afb9",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

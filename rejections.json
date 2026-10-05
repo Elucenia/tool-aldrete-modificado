@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field atividade",
+    "input": {
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "atividade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field atividade",
+    "input": {
+      "atividade": "",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "atividade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option atividade",
+    "input": {
+      "atividade": "__ELUCENIA_INVALID_OPTION__",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "atividade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field resp",
+    "input": {
+      "atividade": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "resp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field resp",
+    "input": {
+      "atividade": "2",
+      "resp": "",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "resp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option resp",
+    "input": {
+      "atividade": "2",
+      "resp": "__ELUCENIA_INVALID_OPTION__",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "resp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field circ",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "circ"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field circ",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "circ"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option circ",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "__ELUCENIA_INVALID_OPTION__",
+      "consc": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "circ"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field consc",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "consc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field consc",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "consc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option consc",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "__ELUCENIA_INVALID_OPTION__",
+      "spo2": "2"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "consc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field spo2",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field spo2",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option spo2",
+    "input": {
+      "atividade": "2",
+      "resp": "2",
+      "circ": "2",
+      "consc": "2",
+      "spo2": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
