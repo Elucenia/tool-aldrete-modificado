@@ -1,0 +1,638 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "aldrete-modificado",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/aldrete-modificado/calculator.js",
+    "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d",
+    "bytes": 5226
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "aldrete-modificado",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Recuperação completa: 10",
+      "originalInput": {
+        "atividade": "2",
+        "resp": "2",
+        "circ": "2",
+        "consc": "2",
+        "spo2": "2"
+      },
+      "input": {
+        "atividade": "2",
+        "resp": "2",
+        "circ": "2",
+        "consc": "2",
+        "spo2": "2"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 10,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "10",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "raw": {
+          "score": 10
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "atividade": "2",
+            "resp": "2",
+            "circ": "2",
+            "consc": "2",
+            "spo2": "2"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+          "startedAt": "2026-10-05T17:38:39.854Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "aldrete-modificado",
+              "main": [
+                "10",
+                "de 10"
+              ],
+              "label": "Aldrete modificado",
+              "raw": {
+                "score": 10
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "4ca357e65754eb7515fd1baa29b90632bf9225011ffa469f315d8fa880282db5",
+          "bytes": 145,
+          "elapsedMs": 7.11019999999553
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+        "startedAt": "2026-10-05T17:38:39.854Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "aldrete-modificado",
+            "main": [
+              "10",
+              "de 10"
+            ],
+            "label": "Aldrete modificado",
+            "raw": {
+              "score": 10
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "4ca357e65754eb7515fd1baa29b90632bf9225011ffa469f315d8fa880282db5",
+        "bytes": 145,
+        "elapsedMs": 7.11019999999553
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "10",
+            "obtained": "10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 10",
+            "obtained": "de 10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "aldrete-modificado",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Precisa de O₂: 9 (limite de alta)",
+      "originalInput": {
+        "atividade": "2",
+        "resp": "2",
+        "circ": "2",
+        "consc": "2",
+        "spo2": "1"
+      },
+      "input": {
+        "atividade": "2",
+        "resp": "2",
+        "circ": "2",
+        "consc": "2",
+        "spo2": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 9,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "9",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "raw": {
+          "score": 9
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "atividade": "2",
+            "resp": "2",
+            "circ": "2",
+            "consc": "2",
+            "spo2": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+          "startedAt": "2026-10-05T17:38:40.167Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "aldrete-modificado",
+              "main": [
+                "9",
+                "de 10"
+              ],
+              "label": "Aldrete modificado",
+              "raw": {
+                "score": 9
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "3784d0712162a73b5b07299af0f9477276ad9309d62d0ab9cf11047dd8b15b63",
+          "bytes": 143,
+          "elapsedMs": 4.433000000019092
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+        "startedAt": "2026-10-05T17:38:40.167Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "aldrete-modificado",
+            "main": [
+              "9",
+              "de 10"
+            ],
+            "label": "Aldrete modificado",
+            "raw": {
+              "score": 9
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "3784d0712162a73b5b07299af0f9477276ad9309d62d0ab9cf11047dd8b15b63",
+        "bytes": 143,
+        "elapsedMs": 4.433000000019092
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "9",
+            "obtained": "9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 10",
+            "obtained": "de 10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "aldrete-modificado",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Sonolento, respiração limitada, em O₂: 7",
+      "originalInput": {
+        "atividade": "2",
+        "resp": "1",
+        "circ": "2",
+        "consc": "1",
+        "spo2": "1"
+      },
+      "input": {
+        "atividade": "2",
+        "resp": "1",
+        "circ": "2",
+        "consc": "1",
+        "spo2": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 7,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "7",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "raw": {
+          "score": 7
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "atividade": "2",
+            "resp": "1",
+            "circ": "2",
+            "consc": "1",
+            "spo2": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+          "startedAt": "2026-10-05T17:38:40.467Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "aldrete-modificado",
+              "main": [
+                "7",
+                "de 10"
+              ],
+              "label": "Aldrete modificado",
+              "raw": {
+                "score": 7
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6332a9b41fdb86393688c086037e18d68a129f8e41bdca23f74e305b74a92013",
+          "bytes": 143,
+          "elapsedMs": 2.453899999993155
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/aldrete-modificado/calculate",
+        "startedAt": "2026-10-05T17:38:40.467Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "aldrete-modificado",
+            "main": [
+              "7",
+              "de 10"
+            ],
+            "label": "Aldrete modificado",
+            "raw": {
+              "score": 7
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6332a9b41fdb86393688c086037e18d68a129f8e41bdca23f74e305b74a92013",
+        "bytes": 143,
+        "elapsedMs": 2.453899999993155
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7",
+            "obtained": "7",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 10",
+            "obtained": "de 10",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
