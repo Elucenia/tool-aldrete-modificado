@@ -97,3 +97,28 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Critère de sortie de la salle de réveil atteint (≥ 9)
+
+Confirmer également une douleur contrôlée, des nausées absentes ou légères et l’absence de saignement actif.
+
+
+### 2
+
+Critère de sortie de la salle de réveil atteint (≥ 9)
+
+Confirmer également une douleur contrôlée, des nausées absentes ou légères et l’absence de saignement actif.
+
+
+### 3
+
+En dessous de 9 : maintenir en salle de réveil
+
+Réévaluer toutes les 15 minutes et traiter ce qui empêche la sortie (douleur, hypoxémie, instabilité, sédation résiduelle).
+

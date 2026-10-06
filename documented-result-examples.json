@@ -1,0 +1,537 @@
+{
+  "id": "aldrete-modificado",
+  "implementationVersion": "aldrete-modificado@native-2026-10-05+53d8efad5f85",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critério de alta da sala de recuperação atingido (≥ 9)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critério de alta da sala de recuperação atingido (≥ 9)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abaixo de 9: manter na sala de recuperação",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Recovery room discharge criterion reached (≥ 9)",
+            "locale": "en",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Also confirm controlled pain, absent or mild nausea, and absence of active bleeding.",
+            "locale": "en",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Recovery room discharge criterion reached (≥ 9)",
+            "locale": "en",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Also confirm controlled pain, absent or mild nausea, and absence of active bleeding.",
+            "locale": "en",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Below 9: keep in the recovery room",
+            "locale": "en",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "Reassess every 15 minutes and treat what prevents discharge (pain, hypoxemia, instability, residual sedation).",
+            "locale": "en",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterio de alta de la sala de recuperación alcanzado (≥ 9)",
+            "locale": "es",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Confirme también dolor controlado, náusea ausente o leve y ausencia de sangrado activo.",
+            "locale": "es",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterio de alta de la sala de recuperación alcanzado (≥ 9)",
+            "locale": "es",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Confirme también dolor controlado, náusea ausente o leve y ausencia de sangrado activo.",
+            "locale": "es",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Por debajo de 9: mantener en la sala de recuperación",
+            "locale": "es",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "Reevalúe cada 15 minutos y trate lo que impide el alta (dolor, hipoxemia, inestabilidad, sedación residual).",
+            "locale": "es",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critère de sortie de la salle de réveil atteint (≥ 9)",
+            "locale": "fr",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Confirmer également une douleur contrôlée, des nausées absentes ou légères et l’absence de saignement actif.",
+            "locale": "fr",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critère de sortie de la salle de réveil atteint (≥ 9)",
+            "locale": "fr",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Confirmer également une douleur contrôlée, des nausées absentes ou légères et l’absence de saignement actif.",
+            "locale": "fr",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "En dessous de 9 : maintenir en salle de réveil",
+            "locale": "fr",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "Réévaluer toutes les 15 minutes et traiter ce qui empêche la sortie (douleur, hypoxémie, instabilité, sédation résiduelle).",
+            "locale": "fr",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Entlassungskriterium für den Aufwachraum erreicht (≥ 9)",
+            "locale": "de",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Bestätigen Sie außerdem kontrollierte Schmerzen, fehlende oder leichte Übelkeit und das Fehlen aktiver Blutung.",
+            "locale": "de",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Entlassungskriterium für den Aufwachraum erreicht (≥ 9)",
+            "locale": "de",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Bestätigen Sie außerdem kontrollierte Schmerzen, fehlende oder leichte Übelkeit und das Fehlen aktiver Blutung.",
+            "locale": "de",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unter 9: im Aufwachraum belassen",
+            "locale": "de",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "Alle 15 Minuten erneut beurteilen und behandeln, was die Entlassung verhindert (Schmerzen, Hypoxämie, Instabilität, Restsedierung).",
+            "locale": "de",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterio di dimissione dalla sala di risveglio raggiunto (≥ 9)",
+            "locale": "it",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Confermare anche dolore controllato, nausea assente o lieve e assenza di sanguinamento attivo.",
+            "locale": "it",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterio di dimissione dalla sala di risveglio raggiunto (≥ 9)",
+            "locale": "it",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "Confermare anche dolore controllato, nausea assente o lieve e assenza di sanguinamento attivo.",
+            "locale": "it",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Al di sotto di 9: mantenere nella sala di risveglio",
+            "locale": "it",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "Rivalutare ogni 15 minuti e trattare ciò che impedisce la dimissione (dolore, ipossiemia, instabilità, sedazione residua).",
+            "locale": "it",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تم الوصول إلى معيار الخروج من غرفة الإفاقة (≥ 9)",
+            "locale": "ar",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "تأكد أيضًا من السيطرة على الألم، وعدم وجود غثيان أو وجوده بشكل خفيف، وعدم وجود نزف نشط.",
+            "locale": "ar",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تم الوصول إلى معيار الخروج من غرفة الإفاقة (≥ 9)",
+            "locale": "ar",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "تأكد أيضًا من السيطرة على الألم، وعدم وجود غثيان أو وجوده بشكل خفيف، وعدم وجود نزف نشط.",
+            "locale": "ar",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أقل من 9: إبقاء المريض في غرفة الإفاقة",
+            "locale": "ar",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "أعد التقييم كل 15 دقيقة وعالج ما يمنع الخروج (الألم، نقص الأكسجة، عدم الاستقرار، التخدير المتبقي).",
+            "locale": "ar",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "已达到恢复室出室标准（≥ 9）",
+            "locale": "zh",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "也请确认疼痛已控制、无恶心或仅轻微恶心，以及无活动性出血。",
+            "locale": "zh",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "已达到恢复室出室标准（≥ 9）",
+            "locale": "zh",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "也请确认疼痛已控制、无恶心或仅轻微恶心，以及无活动性出血。",
+            "locale": "zh",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低于 9：留在恢复室",
+            "locale": "zh",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "每 15 分钟重新评估一次，并处理阻碍出室的因素（疼痛、低氧血症、不稳定、残余镇静）。",
+            "locale": "zh",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "回復室退室基準に到達（≥ 9）",
+            "locale": "ja",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "痛みがコントロールされていること、悪心がないか軽度であること、活動性出血がないことも確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "回復室退室基準に到達（≥ 9）",
+            "locale": "ja",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "痛みがコントロールされていること、悪心がないか軽度であること、活動性出血がないことも確認してください。",
+            "locale": "ja",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9未満：回復室にとどめる",
+            "locale": "ja",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "15分ごとに再評価し、退室を妨げる要因（疼痛、低酸素血症、不安定、残存鎮静）を治療する。",
+            "locale": "ja",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Recuperação completa: 10",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "रिकवरी रूम से डिस्चार्ज का मानदंड पूरा हुआ (≥ 9)",
+            "locale": "hi",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "नियंत्रित दर्द, अनुपस्थित या हल्की मतली, और सक्रिय रक्तस्राव की अनुपस्थिति भी सुनिश्चित करें।",
+            "locale": "hi",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Precisa de O₂: 9 (limite de alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "रिकवरी रूम से डिस्चार्ज का मानदंड पूरा हुआ (≥ 9)",
+            "locale": "hi",
+            "template": "documented-authored-0161f7fc2636081b3afe"
+          },
+          "note": {
+            "text": "नियंत्रित दर्द, अनुपस्थित या हल्की मतली, और सक्रिय रक्तस्राव की अनुपस्थिति भी सुनिश्चित करें।",
+            "locale": "hi",
+            "template": "documented-authored-b072096ab717a42563e0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sonolento, respiração limitada, em O₂: 7",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "9 से कम: रिकवरी रूम में रखें",
+            "locale": "hi",
+            "template": "documented-authored-e620258606d3483276f6"
+          },
+          "note": {
+            "text": "हर 15 मिनट पर पुनर्मूल्यांकन करें और जो भी डिस्चार्ज में बाधा डालता है उसका उपचार करें (दर्द, हाइपोक्सेमिया, अस्थिरता, अवशिष्ट सेडेशन)।",
+            "locale": "hi",
+            "template": "documented-authored-b0e0dff706da07c428ca"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "aldrete-modificado",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "e1c40a00f47a14753dd012425da2191b9b4fff98",
+    "oldEngineSha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d",
+    "currentEngineSha256": "53d8efad5f85864a66fd09d905f0744082b05edfd7744e6bff3aca39f577c1b2"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Recuperação completa: 10",
+      "input": {
+        "atividade": "2",
+        "resp": "2",
+        "circ": "2",
+        "consc": "2",
+        "spo2": "2"
+      },
+      "publicOutput": {
+        "id": "aldrete-modificado",
+        "main": [
+          "10",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "raw": {
+          "score": 10
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 10,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "level": "low",
+        "verdict": "Critério de alta da sala de recuperação atingido (≥ 9)",
+        "note": "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo.",
+        "raw": {
+          "score": 10
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Precisa de O₂: 9 (limite de alta)",
+      "input": {
+        "atividade": "2",
+        "resp": "2",
+        "circ": "2",
+        "consc": "2",
+        "spo2": "1"
+      },
+      "publicOutput": {
+        "id": "aldrete-modificado",
+        "main": [
+          "9",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "raw": {
+          "score": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 9,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "level": "low",
+        "verdict": "Critério de alta da sala de recuperação atingido (≥ 9)",
+        "note": "Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo.",
+        "raw": {
+          "score": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Sonolento, respiração limitada, em O₂: 7",
+      "input": {
+        "atividade": "2",
+        "resp": "1",
+        "circ": "2",
+        "consc": "1",
+        "spo2": "1"
+      },
+      "publicOutput": {
+        "id": "aldrete-modificado",
+        "main": [
+          "7",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "de 10"
+        ],
+        "label": "Aldrete modificado",
+        "level": "high",
+        "verdict": "Abaixo de 9: manter na sala de recuperação",
+        "note": "Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual).",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

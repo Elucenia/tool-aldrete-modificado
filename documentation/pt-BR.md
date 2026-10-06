@@ -97,3 +97,28 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Critério de alta da sala de recuperação atingido (≥ 9)
+
+Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo.
+
+
+### 2
+
+Critério de alta da sala de recuperação atingido (≥ 9)
+
+Confirme também dor controlada, náusea ausente ou leve e ausência de sangramento ativo.
+
+
+### 3
+
+Abaixo de 9: manter na sala de recuperação
+
+Reavalie a cada 15 minutos e trate o que impede a alta (dor, hipoxemia, instabilidade, sedação residual).
+

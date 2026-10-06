@@ -97,3 +97,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Criterio di dimissione dalla sala di risveglio raggiunto (≥ 9)
+
+Confermare anche dolore controllato, nausea assente o lieve e assenza di sanguinamento attivo.
+
+
+### 2
+
+Criterio di dimissione dalla sala di risveglio raggiunto (≥ 9)
+
+Confermare anche dolore controllato, nausea assente o lieve e assenza di sanguinamento attivo.
+
+
+### 3
+
+Al di sotto di 9: mantenere nella sala di risveglio
+
+Rivalutare ogni 15 minuti e trattare ciò che impedisce la dimissione (dolore, ipossiemia, instabilità, sedazione residua).
+

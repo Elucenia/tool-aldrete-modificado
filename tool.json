@@ -300,7 +300,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Modified Aldrete 1995:5 itens 0–2, Sp O 2 substituicor, total 0–10",
-    "implementationVersion": "aldrete-modificado@native-2026-10-03+88b604ae71f0",
+    "implementationVersion": "aldrete-modificado@native-2026-10-05+53d8efad5f85",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/7772368/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -575,7 +575,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+      "implementationHash": "53d8efad5f85864a66fd09d905f0744082b05edfd7744e6bff3aca39f577c1b2",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "aldrete-modificado@native-2026-10-03+88b604ae71f0",
+          "previousImplementationHash": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d",
+          "implementationHash": "53d8efad5f85864a66fd09d905f0744082b05edfd7744e6bff3aca39f577c1b2",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "665d3744767a2b6942d08c876b575ffdab995f71ed91f3f20931fbc232621b38",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Esta interface soma os cinco componentes do Aldrete modificado de recuperação pós-anestésica, com total de 0 a 10; não implementa o instrumento ambulatorial ampliado de dez fatores. O total isolado não autoriza alta e deve ser acompanhado de avaliação e reavaliação clínica. As tabelas originais de 1995 e a adaptação do autor de 2007 diferem na redação dos limites circulatórios; exatamente 20% permanece ambíguo. As tabelas de 1995 também divergem na última pontuação de oxigenação. Essas diferenças precisam de adjudicação clínica e não permitem afirmar equivalência integral apenas pela soma.",
     "limitsEvidence": {
@@ -617,20 +645,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/aldrete-modificado/calculator.js",
-    "bytes": 5226,
-    "sha256": "88b604ae71f06e54d2e9e91992b44ccafa0a7fe17d496738d8093f40119d077d"
+    "bytes": 5431,
+    "sha256": "53d8efad5f85864a66fd09d905f0744082b05edfd7744e6bff3aca39f577c1b2"
   },
-  "sourceToolSha256": "1c543294f0d01610ab2785efcfef72e2622cf04e1ac033e0edcfe4bb9c1acb99",
+  "sourceToolSha256": "af28670145d6ef31a1d3de3b448aa0dc424359b9606ac50b9cff0398f6267b60",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "38ed3ad9bbf94e93728265e302849ff3b3a95d3bef03d6442798aa14fb00afb9",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "38ed3ad9bbf94e93728265e302849ff3b3a95d3bef03d6442798aa14fb00afb9",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

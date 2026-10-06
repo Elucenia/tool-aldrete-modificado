@@ -97,3 +97,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Recovery room discharge criterion reached (≥ 9)
+
+Also confirm controlled pain, absent or mild nausea, and absence of active bleeding.
+
+
+### 2
+
+Recovery room discharge criterion reached (≥ 9)
+
+Also confirm controlled pain, absent or mild nausea, and absence of active bleeding.
+
+
+### 3
+
+Below 9: keep in the recovery room
+
+Reassess every 15 minutes and treat what prevents discharge (pain, hypoxemia, instability, residual sedation).
+
